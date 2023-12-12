@@ -2,7 +2,6 @@ import requests
 import json
 import base64
 import boto3
-from datetime import datetime
 
 def get_secret(secret_name, region_name='eu-west-1'):
     client = boto3.client(service_name='secretsmanager', region_name=region_name)
